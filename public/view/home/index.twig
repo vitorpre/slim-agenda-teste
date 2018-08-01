@@ -1,0 +1,174 @@
+{% extends "template/materialize.twig" %}
+
+{% block head %}
+    {{ parent() }}
+
+{% endblock %}
+
+{% block content %}
+
+    <!--
+    <video autoplay muted loop id="myVideo">
+        <source src="{{ uri }}/dist/imagens/reunion.mp4" type="video/mp4">
+    </video>
+    -->
+
+    <!--
+
+    <div style="background-image: url('{{ uri }}/dist/imagens/couch2.jpg');background-position: bottom right;height:800px;">
+
+    </div>
+    -->
+
+    <div class="parallax-container parallax-inicial valign-wrapper" id="primeiro">
+        <div class="parallax"><img src="{{ uri }}dist/imagens/couch3.jpg"></div>
+
+        <!--
+        <div class="row">
+            <div class="col s12 m3 offset-m1">
+                <div class="card-panel brown darken-1 z-depth-3">
+                    <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                    </span>
+                </div>
+            </div>
+
+            <div class="col s12 m3 offset-m1">
+                <div class="card-panel brown darken-1 z-depth-3">
+                    <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                    </span>
+                </div>
+            </div>
+        </div>
+        -->
+
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 m8 offset-m1">
+                            <div class="card-panel grey darken-2 z-depth-3">
+                                <span class="white-text text-accent-1">I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m5">
+                <div class="card-panel grey darken-2 z-depth-3">
+                    <h3 class="white-text text-lighten-2 margin-top-0 center-align">Are you done already</h3>
+                    <p class="white-text text-lighten-3">I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+                    <div class="center-align">
+                        <button class="btn btn-large waves-effect waves-light blue-grey darken-1">Felicitaciones</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="segunda-secao" id="segundo">
+        <div class="row">
+            <div class="col s12 m4 offset-m1">
+                <img src="{{ uri }}dist/imagens/secretary2.jpg" class="img-secretary" />
+            </div>
+            <div class="col s12 m5">
+                <blockquote>
+                    <h3>Hear it out</h3>
+                    <p>Sed rhoncus tincidunt justo vel efficitur. Phasellus sem lacus, laoreet gravida malesuada at,
+                        ornare nec dui. Cras ultricies diam in pellentesque sagittis. Vestibulum ante ipsum primis in
+                        faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+                    <br />
+                    <i class="fas fa-phone-square"></i>
+                    <i class="fab fa-whatsapp-square"></i>
+
+
+                </blockquote>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">Nome</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">email</i>
+                        <input id="icon_email" type="email" class="validate">
+                        <label for="icon_email">Email</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Mensagem</label>
+                    </div>
+                    <div class="input-field col s12 center-align">
+                        <button class="btn waves-effect waves-light blue-grey darken-1" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="sub-parallax blue-grey darken-4" id="terceiro">
+
+        <h2 class="center-align white-text margin-bottom-4" id="titulo2">Another title with power</h2>
+
+        <div class="row margin-bottom-4">
+            <div class="col m2 offset-m2 center-align ">
+                <img src="{{ uri }}dist/imagens/team.jpg" class="responsive-img circle" />
+                <h3 class="grey-text text-lighten-1">The Team</h3>
+                <p class="grey-text text-lighten-3">Todos as descrições das pessoas são sobre a humanidade do
+                    atendimento, a pessoa pega no pulso, examina, olha com carinho.</p>
+            </div>
+            <div class="col m2 offset-m1 center-align">
+                <img src="{{ uri }}dist/imagens/journey.jpg" class="responsive-img circle" />
+                <h3 class="grey-text text-lighten-1">Good Journey</h3>
+                <p class="grey-text text-lighten-3">No meu xinélo da humildade eu gostaria muito de ver o Neymar e o
+                    Ganso. Por que eu acho que.... </p>
+            </div>
+            <div class="col m2 offset-m1 center-align">
+                <img src="{{ uri }}dist/imagens/tele.jpg" class="responsive-img circle" />
+                <h3 class="grey-text text-lighten-1">Max Tele</h3>
+                <p class="grey-text text-lighten-3">A única área que eu acho, que vai exigir muita atenção nossa, e aí
+                    eu já aventei a hipótese de até criar um ministério. </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="wrapper-arrow-down">
+        <div class="arrow-down"></div>
+    </div>
+
+    <div class="parallax-container" id="quarto">
+        <div class="parallax"><img src="{{ uri }}dist/imagens/deserto3.jpg"></div>
+    </div>
+
+    <div class="container">
+        <h1>Olá {{ nome }}</h1>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </div>
+
+{% endblock %}
+
+{% block footer %}
+
+    <script type="text/javascript">
+        app_uri = "{{ uri }}";
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.parallax');
+            var instances = M.Parallax.init(elems);
+        });
+    </script>
+
+{% endblock %}

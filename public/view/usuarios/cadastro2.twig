@@ -1,0 +1,153 @@
+{% extends "template/base.twig" %}
+
+{% block head %}
+    {{ parent() }}
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+
+        <h1>Dados Gerais</h1>
+
+        <form class="form-horizontal" method="post"
+                {% if usuario.id != null %}
+                    action="{{ uri }}usuarios/alterar"
+                {% else %}
+                    action="{{ uri }}usuarios/inserir"
+                {% endif %}
+        >
+
+            {% if mensagem != null %}
+                <div class="alert alert-{{ mensagem.classe }}" role="alert">
+                    {{ mensagem.mensagem }}
+                </div>
+            {% endif %}
+
+            <input type="hidden" name="id" value="{{ usuario.id }}" />
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label for="">Nome Completo</label>
+                        <input type="text" class="form-control" name="" id="" placeholder=""
+                               value="">
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label for="">Cargo</label>
+                        <input type="text" class="form-control" name="" id="" placeholder=""
+                               value="">
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label for="">Empresa</label>
+                        <input type="text" class="form-control" name="" id="" placeholder=""
+                               value="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label for="">Secretária</label>
+                        <input type="text" class="form-control" name="" id="" placeholder=""
+                               value="">
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label for="">Gênero</label>
+                        <select class="form-control" name="" id="" >
+                            <option></option>
+                            <option>Masculino</option>
+                            <option>Feminino</option>
+                        </select>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label for="">CNPJ</label>
+                        <input type="text" class="form-control" name="" id="" placeholder=""
+                               value="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label for="">Nome Completo</label>
+                        <input type="text" class="form-control" name="" id="" placeholder=""
+                               value="">
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label for="">Cargo</label>
+                        <input type="text" class="form-control" name="" id="" placeholder=""
+                               value="">
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label for="">Empresa</label>
+                        <input type="text" class="form-control" name="" id="" placeholder=""
+                               value="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label for="">Nome Completo</label>
+                        <input type="text" class="form-control" name="" id="" placeholder=""
+                               value="">
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label for="">Cargo</label>
+                        <input type="text" class="form-control" name="" id="" placeholder=""
+                               value="">
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label for="">Empresa</label>
+                        <input type="text" class="form-control" name="" id="" placeholder=""
+                               value="">
+                    </div>
+                </div>
+            </div>
+
+            <input type="submit" class="btn btn-primary" value="Cadastrar" />
+            <a href="{{ uri }}usuarios" ><button type="button" class="btn btn-default">Voltar</button></a>
+
+        </form>
+
+    </div>
+
+{% endblock %}
+
+{% block footer %}
+
+    <script type="text/javascript">
+        app_uri = "{{ uri }}";
+    </script>
+
+{% endblock %}

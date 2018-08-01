@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    {% block head %}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="{{uri}}/favicon.ico">
+
+        <title>Slim {% block title %}{% endblock %}</title>
+
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="{{ uri }}/dist/materialize/css/materialize.min.css">
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- Bootstrap core CSS -->
+        <link href="https://fonts.googleapis.com/css?family=Markazi+Text|Nunito|Raleway" rel="stylesheet">
+        <link href="{{uri}}dist/geral.css" rel="stylesheet">
+        <!-- <link href="{{uri}}/public/css/jquery.dataTables.css" rel="stylesheet"> -->
+        <!-- Custom styles for this template -->
+        <!-- <link href="{{uri}}/public/css/geral.css" rel="stylesheet"> -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <!-- <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> -->
+        <!-- <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> -->
+        <![endif]-->
+    {% endblock %}
+</head>
+
+<body>
+<div class="navbar-fixed">
+    <nav class="blue-grey darken-1">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo right text-white">Logo</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a class="text-white" href="javascript:scrollTo( getOffset( document.getElementById('primeiro') ).top , 1000, easing.easeInOutQuart )">Sass</a></li>
+                <li><a class="text-white" href="javascript:scrollTo( getOffset( document.getElementById('segundo') ).top , 1000, easing.easeInOutQuart )">Secretary</a></li>
+                <li><a class="text-white" href="javascript:scrollTo( getOffset( document.getElementById('terceiro') ).top , 1000, easing.easeInOutQuart )">Components</a></li>
+                <li><a class="text-white" href="javascript:scrollTo( getOffset( document.getElementById('quarto') ).top , 1000, easing.easeInOutQuart )" >JavaScript</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="">
+    {% block content %}{% endblock %}
+</div>
+
+<!-- Compiled and minified JavaScript -->
+<script>
+    uri = "{{uri}}" ;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script src="{{uri}}dist/jquery/jquery.js"></script>
+<script src="{{ uri }}dist/script.js" ></script>
+<script src="{{ uri }}dist/scroll.easing.js" ></script>
+
+
+{% block footer %}{% endblock %}
+</body>
+</html>

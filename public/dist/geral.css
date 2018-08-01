@@ -1,0 +1,140 @@
+
+body {
+    /*font-family: 'Markazi Text', serif;*/
+    font-family: 'Nunito', sans-serif;
+    /*font-family: 'Raleway', sans-serif; */
+    /*font-size: 20px;*/
+    color: #333333;
+}
+
+.conteudo-principal {
+    margin: 20px 0px ;
+}
+
+.cabecalho-listagem {
+    margin-bottom: 10px;
+}
+
+
+.btn-primary {
+    background-color: #FF312F;
+    border-color: #FF312F;
+}
+
+.btn-primary:hover {
+    background-color: #E81111;
+    border-color: #E81111;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: #E81111;
+    border-color: #E81111;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.5);
+}
+
+
+
+
+
+
+.parallax-inicial {
+    height: 700px;
+}
+
+.wrapper-arrow-down
+{
+    text-align: -webkit-center;
+}
+
+.arrow-down
+{
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+
+    border-top: 40px solid #263238;
+
+    margin: auto;
+    position: absolute;
+    left: 0; right: 0;
+}
+
+.sub-parallax
+{
+    padding: 50px 0px;
+}
+
+.margin-bottom-4
+{
+    margin-bottom: 4rem;
+}
+
+.margin-top-0
+{
+    margin-top: 0px;
+}
+
+.dark-green
+{
+    background-color: #192f29 !important;
+}
+
+.segunda-secao {
+    padding-top: 120px;
+    padding-bottom: 140px;
+}
+
+.img-secretary {
+    height: 580px;
+}
+
+
+
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    max-height: 800px;
+}
+
+
+
+.horario {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+
+}
+
+.horario-disponivel {
+    background-color: #4caf50;
+    color: white;
+}
+
+.horario-disponivel:hover {
+    background-color: #4de753;
+}
+
+.horario-ocupado {
+    background-color: #e6512b;
+    color: white;
+}
+
+.horario-ocupado:hover {
+    background-color: #ec1f09;
+}
+
+.horario-selecionado {
+    background-color: #00b8d4;
+}
+
+.horario-selecionado:hover {
+    background-color: #00d1ec;
+}

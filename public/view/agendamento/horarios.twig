@@ -1,0 +1,70 @@
+{% extends "template/materialize.twig" %}
+
+{% block head %}
+    {{ parent() }}
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+
+        <h1>Agendamento</h1>
+
+        {% if mensagem != null %}
+        <div class="card-panel light-green darken-1 white-text">
+            {{ mensagem }}
+        </div>
+        {% endif %}
+
+        <form class="" method="post" id="formulario" action="{{ uri }}agendamentos/marcar"
+                {% if usuario.id != null %}
+                    action="{{ uri }}usuarios/alterar"
+                {% else %}
+                    action="{{ uri }}usuarios/inserir"
+                {% endif %}
+        >
+
+            <input type="hidden" name="horarioSelecionado" id="horarioSelecionado" value="" />
+
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="Placeholder" id="first_name" type="date" name="dataSelecionada" class="validate"
+                           onchange="selecionarData(this)" value="{{ data }}" />
+                    <label for="first_name">Data desejada</label>
+                </div>
+            </div>
+
+            <div class="row" id="containerHorarios">
+
+                {% for horario in horarios  %}
+                    <div class="col s2" >
+                        <div class="horario waves-effect waves-light z-depth-1
+                        {{ horario.status == true ? "horario-disponivel" : "horario-ocupado" }}"
+                        onclick="selecionarHorario(this)" data-horario="{{ horario.horario }}" >
+                            {{ horario.horario }}
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div>
+
+            {% if mensagem != null %}
+                <div class="alert alert-{{ mensagem.classe }}" role="alert">
+                    {{ mensagem.mensagem }}
+                </div>
+            {% endif %}
+
+        </form>
+
+    </div>
+
+{% endblock %}
+
+{% block footer %}
+
+    <script type="text/javascript">
+        app_uri = "{{ uri }}";
+    </script>
+
+{% endblock %}

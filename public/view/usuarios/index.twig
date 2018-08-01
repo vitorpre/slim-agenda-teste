@@ -1,0 +1,62 @@
+{% extends "template/base.twig" %}
+
+{% block head %}
+    {{ parent() }}
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/b-1.5.2/b-html5-1.5.2/b-print-1.5.2/datatables.min.css"/>
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+
+        <div class="cabecalho-listagem">
+            <a href="{{ uri }}usuarios/cadastrar"><button type="button" class="btn btn-primary">Cadastrar</button></a>
+        </div>
+
+        <table id="tabelaDatatable" class="table" >
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for usuario in usuarios %}
+                    <tr>
+                        <td>{{ usuario.nome }}</td>
+                        <td class="text-right">
+                            <a href="{{ uri }}usuarios/editar/{{ usuario.id }}" >
+                                <button type="button" class="btn btn-outline-warning">Alterar</button>
+                            </a>
+                            <button type="button" class="btn btn-outline-danger">Excluir</button>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+
+{% endblock %}
+
+{% block footer %}
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/b-1.5.2/b-html5-1.5.2/b-print-1.5.2/datatables.min.js"></script>
+
+    <script type="text/javascript">
+        app_uri = "{{ uri }}";
+
+        $(document).ready(function() {
+            $('#tabelaDatatable').DataTable({
+                "language": {
+                    "url": "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json"
+                }
+            });
+        } );
+    </script>
+
+{% endblock %}
