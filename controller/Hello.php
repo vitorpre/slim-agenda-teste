@@ -1,6 +1,7 @@
 <?php
 
 namespace controller ;
+use Slim\Http\Request;
 use Slim\Views\Twig;
 
 /**
@@ -13,7 +14,7 @@ class Hello extends Controller
 {
     public function hello($request, $response, $args)
     {
-        $uri = "http://" . $request->getUri()->getHost() . "/";
+        $uri = $this->montarUrlBase($request);
 
         $this->view->render( $response,"home/index.twig", array(
             "uri" => $uri,

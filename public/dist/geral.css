@@ -35,10 +35,77 @@ body {
     box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.5);
 }
 
+.icone-animaçao {
+    color: #0c5460;
+    font-size: 160px;
+    -webkit-transition: font-size 0.6s, color 2s; /* Safari */
+    transition: font-size 0.3s, color 0.3s;
+    transition-timing-function: ease-in-out;
+
+}
+
+.icone-animaçao:hover {
+    color: #24d4b1 !important;
+    font-size: 180px;
+
+}
 
 
 
 
+/* Palleta  */
+.color-pablo {
+    background-color: #776d5c !important;
+}
+
+.text-color-pablo {
+    color: #776d5c !important;
+}
+
+.color-fall-green {
+    background-color: #EFE4C2 !important;
+}
+
+.text-color-fall-green {
+    color: #EFE4C2 !important;
+}
+
+.color-powder-ash {
+    background-color: #B9C9C4 !important;
+}
+
+.text-color-powder-ash {
+    color: #B9C9C4 !important;
+}
+
+.color-outer-space {
+    background-color: #2E373A !important;
+}
+
+.text-color-outer-space {
+    color: #2E373A !important;
+}
+
+.color-satin-linen {
+    background-color: #e6e2d7 !important;
+}
+
+.text-color-satin-linen {
+    color: #e6e2d7 !important;
+}
+
+.titulo {
+    padding: 10px;
+    margin-top: 42px;
+}
+
+.subtitulo {
+    margin-top: 40px;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+/* Fim Palleta  */
 
 .parallax-inicial {
     height: 700px;
@@ -92,8 +159,81 @@ body {
     height: 580px;
 }
 
+.imagem-quem-sou {
+    border: #2E373A solid 10px;
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
 
+    margin-top: -20px;
+    position: relative;
+    top: 0px ;
+    left: 0px ;
 
+}
+
+.imagem-quem-sou:hover {
+    /*transform: rotate(3deg);*/
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+
+    max-width: 105%;
+    top: -10px ;
+    left: -10px ;
+    border: #516065 solid 10px;
+
+}
+
+.texto-destaque
+{
+    font-size: 1.3rem;
+    background-color: #776d5c; /* Pablo */
+    padding: 10px;
+    color: #e6e2d7 !important;
+    max-width: 95% ;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    display: inline-block;
+
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+    position: relative;
+    top: 0px ;
+    left: 0px ;
+}
+
+.texto-destaque:hover
+{
+    /*
+    max-width: 105%;
+    top: -5px ;
+    left: -5px ;
+    */
+
+    max-width: 100%;
+    padding: 20px calc(2.5% + 10px);
+    top: -5px;
+    margin-bottom: 5px;
+    background-color: #2E373A; /* outer-space */
+
+}
+
+.texto-destaque p
+{
+    margin: 0px;
+}
+
+.secao {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    min-height: 800px;
+}
+
+.titulo-secao {
+    margin: 50px auto;
+    width: max-content;
+}
 
 
 #myVideo {

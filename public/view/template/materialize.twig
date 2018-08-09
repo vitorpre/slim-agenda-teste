@@ -30,12 +30,18 @@
         <!-- <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> -->
         <!-- <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> -->
         <![endif]-->
+
+        <svg class="defs-only" style="visibility: hidden; position: absolute;">
+            <filter color-interpolation-filters="srgb" x="0" y="0" height="100%" width="100%" id="filtro-foto">
+                <fecolormatrix type="matrix" values="0.55859375 0 0 0 0.1953125 0.6015625 0 0 0 0.21484375 0.46484375 0 0 0 0.28515625 0 0 0 1 0"></fecolormatrix>
+            </filter>
+        </svg>
     {% endblock %}
 </head>
 
-<body>
+<body class="color-fall-green">
 <div class="navbar-fixed">
-    <nav class="blue-grey darken-1">
+    <nav class="color-outer-space darken-1">
         <div class="nav-wrapper">
             <a href="#" class="brand-logo right text-white">Logo</a>
             <ul id="nav-mobile" class="left hide-on-med-and-down">

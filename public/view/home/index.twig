@@ -7,112 +7,45 @@
 
 {% block content %}
 
-    <!--
-    <video autoplay muted loop id="myVideo">
-        <source src="{{ uri }}/dist/imagens/reunion.mp4" type="video/mp4">
-    </video>
-    -->
-
-    <!--
-
-    <div style="background-image: url('{{ uri }}/dist/imagens/couch2.jpg');background-position: bottom right;height:800px;">
-
-    </div>
-    -->
-
-    <div class="parallax-container parallax-inicial valign-wrapper" id="primeiro">
-        <div class="parallax"><img src="{{ uri }}dist/imagens/couch3.jpg"></div>
-
-        <!--
-        <div class="row">
-            <div class="col s12 m3 offset-m1">
-                <div class="card-panel brown darken-1 z-depth-3">
-                    <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-                    </span>
-                </div>
-            </div>
-
-            <div class="col s12 m3 offset-m1">
-                <div class="card-panel brown darken-1 z-depth-3">
-                    <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-                    </span>
-                </div>
-            </div>
-        </div>
-        -->
+    <div class="color-pablo secao" id="primeiro">
 
         <div class="row">
-            <div class="col s12 m6">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s12 m8 offset-m1">
-                            <div class="card-panel grey darken-2 z-depth-3">
-                                <span class="white-text text-accent-1">I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col m4 offset-m1">
+                <h1 class="text-color-pablo color-satin-linen titulo z-depth-1 hoverable">Are you <br/>done already</h1>
+                <p class="text-color-satin-linen center-align subtitulo">“Existem bilhões de pessoas no planeta e muitos tipos
+                    de personalidades diferentes algumas são introvertidas outras extrovertidas algumas se guiam pela
+                    lógica e outras pelos sentimentos. Em um mundo com tanta diversidade como aprendemos a lidar com os
+                    aqueles que são diferentes? E como aprendemos a entender e aceitar quem nós somos?"</p>
             </div>
 
-            <div class="col s12 m5">
-                <div class="card-panel grey darken-2 z-depth-3">
-                    <h3 class="white-text text-lighten-2 margin-top-0 center-align">Are you done already</h3>
-                    <p class="white-text text-lighten-3">I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
-                    <div class="center-align">
-                        <button class="btn btn-large waves-effect waves-light blue-grey darken-1">Felicitaciones</button>
-                    </div>
-                </div>
+            <div class="col m5 offset-m1">
+                <img class="responsive-img" src="{{ uri }}dist/imagens/1.svg" />
             </div>
         </div>
 
     </div>
 
-    <div class="segunda-secao" id="segundo">
+    <div class="secao" id="segundo">
+
+        <h2 class="center-align text-color-outer-space titulo-secao"> - Quem Sou - </h2>
+        <br/>
+
         <div class="row">
-            <div class="col s12 m4 offset-m1">
-                <img src="{{ uri }}dist/imagens/secretary2.jpg" class="img-secretary" />
+
+            <div class="col m4 offset-m1 valign-wrapper">
+                <img src="{{ uri }}dist/imagens/perfil2.jpg" class="z-depth-1 responsive-img imagem-quem-sou hoverable" />
             </div>
-            <div class="col s12 m5">
-                <blockquote>
-                    <h3>Hear it out</h3>
-                    <p>Sed rhoncus tincidunt justo vel efficitur. Phasellus sem lacus, laoreet gravida malesuada at,
-                        ornare nec dui. Cras ultricies diam in pellentesque sagittis. Vestibulum ante ipsum primis in
-                        faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-                    <br />
-                    <i class="fas fa-phone-square"></i>
-                    <i class="fab fa-whatsapp-square"></i>
 
-
-                </blockquote>
-
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="material-icons prefix">account_circle</i>
-                        <input id="icon_prefix" type="text" class="validate">
-                        <label for="icon_prefix">Nome</label>
-                    </div>
-                    <div class="input-field col s12">
-                        <i class="material-icons prefix">email</i>
-                        <input id="icon_email" type="email" class="validate">
-                        <label for="icon_email">Email</label>
-                    </div>
-                    <div class="input-field col s12">
-                        <textarea id="textarea1" class="materialize-textarea"></textarea>
-                        <label for="textarea1">Mensagem</label>
-                    </div>
-                    <div class="input-field col s12 center-align">
-                        <button class="btn waves-effect waves-light blue-grey darken-1" type="submit" name="action">Submit
-                            <i class="material-icons right">send</i>
-                        </button>
-                    </div>
+            <div class="col m5 offset-m1 valign-wrapper">
+                <div class="center-align">
+                    <div class="text-color-pablo texto-destaque center-align hoverable z-depth-1"><p class="mar">Psicóloga Clínica atuando há 16 anos nessa área, com muita experiência em atendimentos de crianças com
+                        dificuldades de aprendizagem escolar, TDAH, fobias, timidez e outras temáticas, incluindo orientação a pais.</p></div>
+                    <div class="text-color-pablo texto-destaque center-align hoverable z-depth-1"><p>Atendo adolescentes e adultos de todas as idades.</p></div>
+                    <div class="text-color-pablo texto-destaque center-align hoverable z-depth-1"><p>Procuro sempre estar aprimorando meus conhecimentos profissionais com cursos, leituras e outros.</p></div>
+                    <div class="text-color-pablo texto-destaque center-align hoverable z-depth-1"><p>Especialização em Abordagem Analítica.</p></div>
                 </div>
-
             </div>
+
         </div>
 
     </div>
@@ -123,19 +56,19 @@
 
         <div class="row margin-bottom-4">
             <div class="col m2 offset-m2 center-align ">
-                <img src="{{ uri }}dist/imagens/team.jpg" class="responsive-img circle" />
+                <img src="{{ uri }}dist/imagens/team.jpg" class="responsive-img circle"/>
                 <h3 class="grey-text text-lighten-1">The Team</h3>
                 <p class="grey-text text-lighten-3">Todos as descrições das pessoas são sobre a humanidade do
                     atendimento, a pessoa pega no pulso, examina, olha com carinho.</p>
             </div>
             <div class="col m2 offset-m1 center-align">
-                <img src="{{ uri }}dist/imagens/journey.jpg" class="responsive-img circle" />
+                <img src="{{ uri }}dist/imagens/journey.jpg" class="responsive-img circle"/>
                 <h3 class="grey-text text-lighten-1">Good Journey</h3>
                 <p class="grey-text text-lighten-3">No meu xinélo da humildade eu gostaria muito de ver o Neymar e o
                     Ganso. Por que eu acho que.... </p>
             </div>
             <div class="col m2 offset-m1 center-align">
-                <img src="{{ uri }}dist/imagens/tele.jpg" class="responsive-img circle" />
+                <img src="{{ uri }}dist/imagens/tele.jpg" class="responsive-img circle"/>
                 <h3 class="grey-text text-lighten-1">Max Tele</h3>
                 <p class="grey-text text-lighten-3">A única área que eu acho, que vai exigir muita atenção nossa, e aí
                     eu já aventei a hipótese de até criar um ministério. </p>
@@ -153,9 +86,83 @@
         <div class="parallax"><img src="{{ uri }}dist/imagens/deserto3.jpg"></div>
     </div>
 
+    <div class="segunda-secao" id="segundo">
+        <div class="row">
+
+            <div class="col s12 m10 offset-m1">
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <img src="{{ uri }}dist/imagens/secretary.png" class="img-secretary">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content" style="padding: 0px 40px;">
+                            <blockquote>
+                                <h3>Hear it out</h3>
+                                <p>Sed rhoncus tincidunt justo vel efficitur. Phasellus sem lacus, laoreet gravida
+                                    malesuada at, ornare nec dui. Cras ultricies diam in pellentesque sagittis.
+                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                                    Curae;</p>
+                                <br/>
+                                <p><i class="fa fa-phone"></i> (11)98562-7485</p>
+                                <p><i class="fa fa-whatsapp"></i> (11)98562-7485</p>
+
+
+                            </blockquote>
+
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="icon_prefix" type="text" class="validate">
+                                    <label for="icon_prefix">Nome</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">email</i>
+                                    <input id="icon_email" type="email" class="validate">
+                                    <label for="icon_email">Email</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                    <label for="textarea1">Mensagem</label>
+                                </div>
+                                <div class="input-field col s12 center-align">
+                                    <button class="btn waves-effect waves-light blue-grey darken-1" type="submit"
+                                            name="action">Submit
+                                        <i class="material-icons right">send</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="card-action">
+                            <a href="#">This is a link</a>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="parallax-container" id="quinto">
+        <div class="container">
+            <div class="row ">
+                <div class="col m3 offset-m1 valign-wrapper">
+                    <i class="fa fa-address-card text-center teal-text icone-animaçao" ></i>
+                </div>
+                <div class="col m5 ">
+                    <p>Quisque convallis euismod mi. Suspendisse arcu ante, ultrices vel turpis ut, tincidunt fringilla augue. Aenean
+                        sit amet sapien lacus. Maecenas molestie risus nec elementum aliquam. Phasellus tristique, arcu quis mollis commodo,
+                        ipsum nibh dictum urna, et consectetur libero dui in ante. Cras lacinia nisl at quam elementum commodo. Nulla
+                        eu nisi sit amet orci semper iaculis eget quis lectus. </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <div class="container">
         <h1>Olá {{ nome }}</h1>
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </div>
 
 {% endblock %}
@@ -165,7 +172,7 @@
     <script type="text/javascript">
         app_uri = "{{ uri }}";
 
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('.parallax');
             var instances = M.Parallax.init(elems);
         });

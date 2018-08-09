@@ -10,6 +10,7 @@ namespace Controller;
 
 use Illuminate\Database\Capsule\Manager;
 use Slim\Container;
+use Slim\Http\Request;
 use Slim\Views\Twig;
 
 class Controller
@@ -18,7 +19,7 @@ class Controller
      * @var Twig
      */
     protected $view ;
-    protected $uri ;
+    protected $baseUri ;
     /**
      * @var Manager
      */
@@ -33,6 +34,13 @@ class Controller
         $this->db = $c["db"] ;
         $this->view = $c["view"] ;
         $this->router = $c['router'] ;
+
+        $this->baseUri = getenv('BASE_DIR_SLIM');
+    }
+
+    public function montarUrlBase(Request $request)
+    {
+        return $request->getUri()->getScheme() . "://" . $request->getUri()->getHost() . $this->baseUri . "/";
     }
 
 }
